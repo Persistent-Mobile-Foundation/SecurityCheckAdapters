@@ -36,6 +36,7 @@ limitations under the License.
 			<artifactId>mfp-security-checks-base</artifactId>
 			<version>[8.0.0,9.0.0)</version>
 		</dependency>
+
 	</dependencies>
 
 	<properties>
@@ -48,6 +49,7 @@ limitations under the License.
 		<mfpfPassword>admin</mfpfPassword>
 		<mfpfRuntime>mfp</mfpfRuntime>
 	</properties>
+	
 
 	<build>
 		<plugins>

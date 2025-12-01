@@ -31,6 +31,14 @@ public class ResourceAdapterResource {
 	AdapterSecurityContext securityContext;
 
 	/* Path for method: "<server address>/mfp/api/adapters/ResourceAdapter" */
+	@PATCH
+	@Produces(MediaType.TEXT_PLAIN)
+	@Path("/balance")
+	@OAuthSecurity(scope="accessRestricted") //This method is protected. Each application can define what "accessRestricted" means.
+	public String getBalanceNew(){
+		return "PATCH Method Balance 19938.80";
+	}
+	
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	@Path("/balance")
@@ -39,7 +47,6 @@ public class ResourceAdapterResource {
 		return "19938.80";
 	}
 
-	@POST
 	@Path("/transfer")
 	@OAuthSecurity(scope="transferPrivilege") //This method is protected. Each application can define what "transferPrivilege" means.
 	public Response transfer(@FormParam("amount") float amount){
