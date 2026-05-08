@@ -23,7 +23,7 @@ import com.ibm.mfp.server.security.external.checks.SecurityCheckConfiguration;
 import com.ibm.mfp.server.security.external.checks.SecurityCheckReference;
 import com.ibm.mfp.server.security.external.checks.impl.ExternalizableSecurityCheck;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;

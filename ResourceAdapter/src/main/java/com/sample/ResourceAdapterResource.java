@@ -19,10 +19,15 @@ import com.ibm.mfp.adapter.api.OAuthSecurity;
 import com.ibm.mfp.server.registration.external.model.AuthenticatedUser;
 import com.ibm.mfp.server.security.external.resource.AdapterSecurityContext;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.FormParam;
+import jakarta.ws.rs.PATCH;
+import jakarta.ws.rs.Produces;
 
 @Path("/")
 public class ResourceAdapterResource {
@@ -47,6 +52,7 @@ public class ResourceAdapterResource {
 		return "19938.80";
 	}
 
+	@POST
 	@Path("/transfer")
 	@OAuthSecurity(scope="transferPrivilege") //This method is protected. Each application can define what "transferPrivilege" means.
 	public Response transfer(@FormParam("amount") float amount){
@@ -63,8 +69,8 @@ public class ResourceAdapterResource {
 
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	@OAuthSecurity(scope = "transactions")
 	@Path("/transactions")
+	@OAuthSecurity(scope = "transactions")
 	public String getTransactions(){
 		AuthenticatedUser currentUser = securityContext.getAuthenticatedUser();
 		return "Transactions for " + currentUser.getDisplayName() + ":\n{'date':'12/01/2016', 'amount':'19938.80'}";

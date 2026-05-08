@@ -20,10 +20,12 @@ import com.ibm.mfp.adapter.api.OAuthSecurity;
 import com.ibm.mfp.server.registration.external.model.ClientData;
 import com.ibm.mfp.server.security.external.resource.AdapterSecurityContext;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.DELETE;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.Response;
 
 
 

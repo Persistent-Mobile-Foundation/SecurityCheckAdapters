@@ -42,6 +42,7 @@ limitations under the License.
 				<groupId>com.ibm.mfp</groupId>
 				<artifactId>adapter-maven-plugin</artifactId>
 				<extensions>true</extensions>
+				<version>10.1.0</version>
 			</plugin>
 		</plugins>
 	</build>

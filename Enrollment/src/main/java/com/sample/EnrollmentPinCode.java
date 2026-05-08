@@ -20,7 +20,7 @@ import com.ibm.mfp.server.registration.external.model.PersistentAttributes;
 import com.ibm.mfp.server.security.external.checks.AuthorizationResponse;
 import com.ibm.mfp.server.security.external.checks.SecurityCheckReference;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;

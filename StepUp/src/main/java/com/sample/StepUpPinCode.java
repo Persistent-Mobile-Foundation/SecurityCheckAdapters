@@ -19,7 +19,7 @@ import com.ibm.mfp.security.checks.base.CredentialsValidationSecurityCheck;
 import com.ibm.mfp.server.security.external.checks.AuthorizationResponse;
 import com.ibm.mfp.server.security.external.checks.SecurityCheckReference;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
