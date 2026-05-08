@@ -15,4 +15,4 @@ https://pmf.persistentproducts.com/tutorials/en/foundation/10x/application-devel
 Persistent Mobile Foundation 10.1.0 onwards
 
 ## Note
-Please switch to release-8x branch for older release adapters.
+Please switch to release-9x branch for older release adapters.
